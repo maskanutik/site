@@ -1,0 +1,120 @@
+ 
+  main {
+    margin-top: 7%;
+    padding-top: 30px;
+    width:auto;
+    margin-left:37%;
+    margin-bottom:6%;
+    background-color: rgb(230, 255, 255);
+  }
+ 
+  body {
+	background-color: rgb(230, 255, 255);
+	
+  }
+ 
+  main h1 {
+    margin-bottom: 10px;
+  }
+
+
+.wrapper{
+  list-style-type: none;
+  padding:0;
+  border: solid 2px #545F66;
+  border-radius: 10px;
+  padding:20px 35px 35px 20px;
+  background-color: white;
+  max-width: 500px;
+}
+
+.form_group {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5em;
+}
+
+.form_group  label{
+  padding-top:10px;
+  padding-left:5px;
+  font-size: 22px;
+  flex:1;
+}
+  
+.form_input {
+  display:flex;
+  flex-direction: column;
+  padding: 3px 5px;
+  flex:2;
+}
+
+.form_input input {
+  min-width:200px;
+  min-height:30px;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding-left:10px;
+}
+
+.form_input span {
+  padding-top:5px;
+  color: darkred;
+  font-size:small;
+  min-height:20px;
+}
+
+  .form_group  textarea {
+    padding: 3px 5px;
+    min-width:200px;
+    min-height:30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    flex:2;
+  }
+
+  .form_group  input:hover,.form_group  textarea:hover {
+      background-color: #f2f6f9;
+  }
+
+  .upload-btn {
+    display: inline-flex;
+    padding: 0px;
+    height: 40px;
+    width: 145px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(230, 255, 255);
+  }
+
+  .upload-btn label {
+    padding: 10px;
+  }
+
+  .upload-text {
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+.form_button,.post_button {
+    margin-top: 5px;
+    margin-right:0;
+    padding:10px;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: rgb(230, 255, 255);
+}
+  
+.form_button:hover,.post_button:hover, .upload-btn:hover {
+  background: rgb(179, 255, 255);
+}
+
+.filters select {
+    font-size:medium;
+    font-weight:700;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    outline:0;
+    background: rgb(255, 255, 255);
+}

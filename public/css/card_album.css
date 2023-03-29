@@ -1,0 +1,93 @@
+.filters{
+    padding: 15px;
+    margin-top: 0%;
+    background: rgb(230, 255, 255);
+    display: inline-block;
+}
+
+.filter{
+    display: block;
+}
+
+label{
+    background-color: rgb(0, 0, 128);
+}
+
+.filters select {
+    font-size:medium;
+    font-weight:700;
+    padding: 15px;
+    margin: 7px;
+    border: solid 1px rgb(0, 0, 128);
+    outline: 0;
+    background: rgb(255, 255, 255);
+}
+
+
+.filter_button, .clear_button{
+    padding: 13px 13px 13px 13px;
+    margin: 3px;
+    font-size: 12px;
+    font-weight:800;
+    border-radius:5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+  
+main{
+    background: rgb(230, 255, 255);
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-gap: 1em;
+    width:100%;
+    height: auto;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.main_info h1 {
+        font-family: 'Peddana',serif;
+	font-size: 30px;
+    	color:rgb (230, 255, 255);
+	text-align: center;	
+}
+
+.blocks{
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 6%;
+}
+
+.block{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 128);
+    height: auto;
+    width: 25%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 2%;
+    float: left;
+}
+
+.go_to_page:hover{
+    color: rgb(0, 0, 0);
+}
+
+.block:hover{
+    background-color: rgb(179, 255, 255);
+}
+
+ .block_genre, .block_year, .block_artist,.block_format, .go_to_page{
+
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.block_title{
+	font-weight: 700;
+}
+

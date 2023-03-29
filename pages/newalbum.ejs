@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  	<head>
+    		<meta charset="UTF-8" />
+    		<title>Добавление альбома SHINee</title>
+    		<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    		<link rel="stylesheet" type="text/css" href="../public/css/newalbum.css" />
+  	</head>
+  	<body>
+    		<header>
+			<div class="header-inner">
+				<div id="logo" class="log">	
+					<p><b>SHINee</b></p>	
+				</div>
+				<nav>
+					<a href="/">Главная</a>
+					<a href="/members">Участники</a>
+					<a href="/discography">Дискография</a>
+					<a href="/awards">Награды</a>
+				</nav>
+			</div>
+		</header>
+   
+    <main>
+      <h1>Добавление альбома</h1>
+      <form class="form" method="post">
+        <ul class="wrapper">
+          <li class="form_group">
+            <label for="title">Название</label>
+            <div class="form_input">
+              <textarea name="text" id="title"></textarea>
+              <span class="error_title"></span>
+            </div>             
+          </li>
+          <li class="form_group">
+            <label for="artist">Исполнитель</label>
+            <div class="form_input">
+              <textarea name="text" id="artist"></textarea>
+              <span class="error_artist"></span>
+            </div>             
+          </li> 
+          <li class="form_group">
+            <label for="genre">Жанр</label>
+            <div class="form_input">
+              <textarea name="text" id="genre"></textarea>
+              <span class="error_genre"></span>
+            </div>             
+          </li>
+          <li class="form_group">
+            <label for="year">Год</label>
+            <div class="form_input">
+              <textarea name="text" id="year"></textarea>
+              <span class="error_year"></span>
+            </div>     
+          </li>
+
+          <li class="form_group"></li>
+            <div class="form_input">
+              <input class="post_button" type="submit" value="Добавить" />
+              <span class="sending_result"></span>
+            </div>
+          </li>
+   
+        </ul>    
+      </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../public/scripts/validate_input.js"></script>
+		<footer>
+			<p class="copyright"><b>Сделано с любовью<b></p>
+		</footer>
+  </body>
+</html>

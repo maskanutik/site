@@ -1,0 +1,48 @@
+.album_title h1 {
+	padding-top: 2%;
+	font-family: 'Peddana',serif;
+	font-size: 30px;
+    	color:rgb (230, 255, 255);
+	background: rgb(230, 255, 255);
+	text-align: center;	
+}
+
+
+.album_info {
+	height: auto;
+	weight: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: rgb(230, 255, 255);
+}
+
+.album_info img {
+	height: 70vh;
+	weight: auto;
+	text-align: center;
+        padding: 3%;
+	padding-left: 15%;
+}
+
+.uirmic {
+	margin-top: 8%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+.uirmic p{
+	font-family: 'Palatino';
+	font-size: 28px;
+	color:rgb (230, 255, 255);
+	text-align: left;
+	
+}
+
+.uirmic ol {
+	padding-left: 20%;
+	font-family: 'Palatino';
+	font-size: 24px;
+        color:rgb(19, 31, 19);	
+	padding-bottom: 5%;
+}

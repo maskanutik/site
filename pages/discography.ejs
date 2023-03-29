@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Дискография SHINee</title>
+		<link rel="stylesheet" href="../public/css/style.css"> 
+		<link rel="stylesheet" href="../public/css/card_album.css">
+		<link rel="stylesheet" href="../public/css/buttonToTop.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="header-inner">
+				<div id="logo" class="log">	
+					<p><b>SHINee</b></p>	
+				</div>
+				<nav>
+					<a href="/">Главная</a>
+					<a href="/members">Участники</a>
+					<a href="/discography">Дискография</a>
+					<a href="/awards">Награды</a>
+					<a href="/newalbum">Добавить</a>
+				</nav>
+			</div>
+		</header>
+		<div class="intro">
+		</div>
+
+        <main>
+            <div class="filters">
+                        <p>Жанр</p>
+                        <select id="filter_genre">
+                                <option selected value="Любой">Любой</option>
+                                <option value="К-поп">К-поп</option>
+                                <option value="Хип-Хоп">Хип-Хоп</option>
+			                    <option value="Электроника">Электроника</option>   
+			                    <option value="Соул">Соул</option>     
+                        </select>
+                        <p>Год</p>           
+                        <select id="filter_year">
+                                <option selected value="Любой">Любой</option>
+                                <option value="2008">2008</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>   
+			                    <option value="2021">2021</option>   
+                                <option value="2022">2022</option>             
+                        </select>
+                        <p>Артист</p>
+                        <select id="filter_member">
+                                <option selected value="Любой">Любой</option>
+                                <option value="SHINee">SHINee</option>
+                                <option value="Key">Key</option>
+                                <option value="MinHo">MinHo</option>
+                                <option value="TaeMin">TaeMin</option>      
+                                <option value="JongHyun">JongHyun</option>             
+                        </select>                      
+                    <br><button class="filter_button">Найти</button>
+                    <button class="clear_button">Очистить</button>
+            </div> 
+            
+            <div class="main_info">
+                <h1> Информация об альбомах</h1>
+            </div>
+            <div class="blocks ">
+                
+                <% data.forEach(block=>{ %>
+                    <div class="block">
+                        <img src= "<%=block.img%>" width="auto" height="250vh">
+                            <p class="block_title"><%= block.title %></p>
+                            <p class="block_genre">Жанр: <%=block.genre%></p>
+                            <p class="block_year">Год: <%=block.year%></p>
+                            <p class="block_artist">Артист: <%=block.artist%></p>
+                            <p class="block_format">Формат: <%=block.format%></p>
+                            <p class="go_to_page">
+                                <a href="<%=block.go_to_page%>">Подробнее</a>
+                            </p>          
+                    </div>
+               <% }) %>
+
+            </div> 
+           
+        </main>
+      
+        <footer>
+            <div class="copyright">
+                <p> Сделано с любовью</p>
+            </div>
+        </footer>
+		<a href="#" class="back-to-top"></a>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="../public/scripts/scroll.js"></script>
+		<script src="../public/scripts/filters.js"></script>
+    </body>
+ 
+</html>

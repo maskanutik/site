@@ -1,0 +1,73 @@
+label{
+    background-color: rgb(0, 0, 128);
+}
+  
+main{
+    background: rgb(230, 255, 255);
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-gap: 1em;
+    text-align: center;
+    padding-top: 1%;
+}
+
+
+.blocks{
+    box-sizing: border-box;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 6%;
+}
+
+.block{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 128);
+    min-height: 35%;
+    width: 30%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 2%;
+    float: left;
+}
+
+.block:hover{
+    background-color: rgb(179, 255, 255);
+}
+
+
+.block p{
+    font-family: 'Palatino';
+    font-size: 20px;
+    font-weight: normal;
+    color:rgb (230, 255, 255);
+}
+
+.name p{
+    font-family: 'Palatino';
+    font-size: 27px;
+    font-weight: bold;
+    color:rgb (230, 255, 255);
+}
+
+.main_info h1{
+	padding-top: 2%;
+	font-family: 'Peddana',serif;
+	font-size: 30px;
+    	color:rgb (230, 255, 255);
+}
+
+
+.leftstr {
+	float: left;
+	padding-left: 15%;	
+}
+
+.rightstr {
+	text-align: right;
+	padding-right: 15%;
+}
+  
